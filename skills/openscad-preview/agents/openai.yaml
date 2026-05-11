@@ -1,0 +1,8 @@
+interface:
+  display_name: "OpenSCAD Preview"
+  short_description: "Render OpenSCAD PNG previews"
+  brand_color: "#10A37F"
+  default_prompt: "Use $openscad-preview to render this .scad file and inspect the generated PNG."
+
+policy:
+  allow_implicit_invocation: true

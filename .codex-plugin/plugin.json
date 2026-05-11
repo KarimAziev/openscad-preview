@@ -1,0 +1,39 @@
+{
+  "name": "openscad-preview",
+  "version": "0.1.0",
+  "description": "Render OpenSCAD files to PNG previews for visual CAD inspection from Codex.",
+  "author": {
+    "name": "Karim Aziiev",
+    "email": "karim.aziiev@gmail.com",
+    "url": "https://github.com/KarimAziev"
+  },
+  "homepage": "https://github.com/KarimAziev/openscad-preview",
+  "repository": "https://github.com/KarimAziev/openscad-preview",
+  "license": "MIT",
+  "keywords": [
+    "openscad",
+    "cad",
+    "preview",
+    "rendering",
+    "3d-printing"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "OpenSCAD Preview",
+    "shortDescription": "Render OpenSCAD previews",
+    "longDescription": "Render .scad files to PNG previews with bundled OpenSCAD CLI wrappers, feature-detected default arguments, configurable camera views, and multi-angle preview generation.",
+    "developerName": "Karim Aziiev",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/KarimAziev/openscad-preview",
+    "defaultPrompt": [
+      "Use OpenSCAD Preview to render this .scad file and inspect the generated PNG.",
+      "Use OpenSCAD Preview to generate multi-angle previews for this OpenSCAD assembly.",
+      "Use OpenSCAD Preview to rerender this part after the geometry change."
+    ],
+    "brandColor": "#10A37F"
+  }
+}
