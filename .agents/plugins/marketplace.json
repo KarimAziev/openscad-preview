@@ -8,7 +8,7 @@
       "name": "openscad-preview",
       "source": {
         "source": "local",
-        "path": "./"
+        "path": "./plugins/openscad-preview"
       },
       "policy": {
         "installation": "AVAILABLE",

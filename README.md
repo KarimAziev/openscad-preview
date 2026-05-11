@@ -42,15 +42,15 @@ These defaults are detected from `openscad --help`. Unsupported preferred defaul
 Add this repository as a plugin marketplace:
 
 ```bash
-codex plugin marketplace add KarimAziev/openscad-preview
+codex marketplace add KarimAziev/openscad-preview
 ```
 
-Then restart Codex, open the plugin directory, select the `OpenSCAD Preview` marketplace, and install the plugin.
+Then restart Codex, run `codex`, type `/plugins`, select the `OpenSCAD Preview` marketplace, and install the plugin.
 
 For local development from this clone:
 
 ```bash
-codex plugin marketplace add ~/src/openscad-preview
+codex marketplace add ~/src/openscad-preview
 ```
 
 ## Use With Codex
@@ -113,13 +113,13 @@ The bundled scripts are primarily for agents, but they can also be run manually 
 Render one preview:
 
 ```bash
-skills/openscad-preview/scripts/render_preview.sh path/to/model.scad
+plugins/openscad-preview/skills/openscad-preview/scripts/render_preview.sh path/to/model.scad
 ```
 
 Render a preview set:
 
 ```bash
-skills/openscad-preview/scripts/render_preview_set.sh \
+plugins/openscad-preview/skills/openscad-preview/scripts/render_preview_set.sh \
   path/to/model.scad \
   --angles iso,front,right,top \
   --viewall \
@@ -140,7 +140,7 @@ iso, front, rear, left, right, top, bottom
 Example:
 
 ```bash
-skills/openscad-preview/scripts/render_preview_set.sh \
+plugins/openscad-preview/skills/openscad-preview/scripts/render_preview_set.sh \
   scad/assembly.scad \
   --angles iso,front,right,top,rear,left \
   --distance 1200 \
@@ -150,11 +150,11 @@ skills/openscad-preview/scripts/render_preview_set.sh \
 ## Repository Layout
 
 ```text
-.codex-plugin/plugin.json
 .agents/plugins/marketplace.json
-skills/openscad-preview/SKILL.md
-skills/openscad-preview/scripts/render_preview.sh
-skills/openscad-preview/scripts/render_preview_set.sh
+plugins/openscad-preview/.codex-plugin/plugin.json
+plugins/openscad-preview/skills/openscad-preview/SKILL.md
+plugins/openscad-preview/skills/openscad-preview/scripts/render_preview.sh
+plugins/openscad-preview/skills/openscad-preview/scripts/render_preview_set.sh
 ```
 
 ## License
