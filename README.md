@@ -42,7 +42,7 @@ These defaults are detected from `openscad --help`. Unsupported preferred defaul
 Add this repository as a plugin marketplace:
 
 ```bash
-codex marketplace add KarimAziev/openscad-preview
+codex plugin marketplace add KarimAziev/openscad-preview
 ```
 
 Then restart Codex, run `codex`, type `/plugins`, select the `OpenSCAD Preview` marketplace, and install the plugin.
@@ -50,7 +50,7 @@ Then restart Codex, run `codex`, type `/plugins`, select the `OpenSCAD Preview` 
 For local development from this clone:
 
 ```bash
-codex marketplace add ~/src/openscad-preview
+codex plugin marketplace add ~/src/openscad-preview
 ```
 
 ## Use With Codex
